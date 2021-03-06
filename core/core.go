@@ -125,7 +125,7 @@ func (c Core) String() string {
 }
 
 func (c1 Core) ThrowErrorIfNot(c2 Core) {
-    if c1 == c2 {
+    if c1 != c2 {
         fmt.Println("ERROR: Expected " + "\"" + c1.String() +
             " found " + "\"" + c2.String() + "\"")
         os.Exit(0)
